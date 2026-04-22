@@ -30,7 +30,7 @@ DOI Linked [here](https://doi.org/10.5281/zenodo.19362900)
 
 **Refined Specific Problem:** How can current environmental data be used to predict the air quality of a certain location (such as city) so that work can be done to fix the problem?
 
-#### Reasoning
+### Reasoning
 
 **Rationale for Refinement:** I refined the original problem to be centered around predicting the air quality of a specific location given the environmental data from that area. It is extremely important to be able to predict the air quality of a certain location so that citizens can be advised on any risks/health hazards for that day (and how to combat them, such as with masks). Also, predicting the air quality has to be done in a small enough location (such as a city) because too large of an area would have too much variation in air quality (e.g. rural vs. urban). Finally, specifying current environmental data is important because then we can aim to predict air quality in later dates, and possibly start to prevent worsening conditions.
 
@@ -60,6 +60,8 @@ This project lives in multiple domains. It exists in the domain of sustainabilit
 | Chemical Releases | This article describes how chemcicals/pollutants can be released into the air. | https://myuva-my.sharepoint.com/:b:/g/personal/jph4dg_virginia_edu/IQDXs3hJ-P4yT5ZCd7Rw_Bm0AeGXtN4mTM1k-Bruyr_ZvX0?e=TzSl8I |
 | Air Pollution and Your Health | This article describes some of the common pollutants, what health concerns they might cause, and who is at most risk. | https://myuva-my.sharepoint.com/:b:/g/personal/jph4dg_virginia_edu/IQAE9a2bgV-VR70sAlcrherMAUuSCp9AEBR6CiAW_OT2F-k?e=quZVAi |
 | 5 ways Cites are Cleaning the Air we Breathe | This article describes the tactics and increased monitoring that cities are implementing to combat air pollution. This is useful as air quality prediction models can point towards the cities that need new, greener infrastructure. | https://myuva-my.sharepoint.com/:b:/g/personal/jph4dg_virginia_edu/IQBGaMJVswUiS7Ka2GuHSI38AeM7VxosM0a-8KZ-0Rttsc8?e=9dyyTZ |
+
+Click [here](https://myuva-my.sharepoint.com/:f:/g/personal/jph4dg_virginia_edu/IgDT33upNmyYRq8Z0HyWDj90AYe2nlcObaC5WditA5sZM7o?e=N4wwye) to access a folder of all the readings!
 
 ## Data Creation
 #### Provenance
