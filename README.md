@@ -63,7 +63,7 @@ This project lives in multiple domains. It exists in the domain of sustainabilit
 
 Click [here](https://myuva-my.sharepoint.com/:f:/g/personal/jph4dg_virginia_edu/IgDT33upNmyYRq8Z0HyWDj90AYe2nlcObaC5WditA5sZM7o?e=N4wwye) to access a folder of all the readings!
 
-### Data Creation
+## Data Creation
 #### Provenance
 The data used in this project is about air pollution and air quality ratings. The main dataset was found from Kaggle, and upon further inspectation this dataset originates from multiple sources, including the World Health Organization and the World Bank. This data was webscraped to form the Kaggle dataset. For this project, the kaggle dataset was converted to the document model using MongoDB.
 
@@ -117,7 +117,7 @@ Below is the implicit schema for what a document in the Population collection *c
 | Pollution | Data on pollutants in the air and the air quality rating | mongodb+srv://rveermo_db_user:327cBSJ8jWAyOu1s@pollution.q8lipjf.mongodb.net/?appName=pollution |
 
 #### Data Dictionary 
-**Pollution**
+Pollution
 | Name | Datatype | Description | Example | Uncertainty |
 | :--- | :--- | :--- | :--- | :--- |  
 | _id | STRING | The unique Id for each document | 69e4e1322c1f48546c50b31f | N/A |
