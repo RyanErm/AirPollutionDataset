@@ -9,7 +9,6 @@ DOI Linked [here](https://doi.org/10.5281/zenodo.19362900)
 **Executive Summary** NEED TO FILL IN
 
 #### Important Links
-Need to fix the last 4 links
 | File/Resource | Link |
 | :--- | :--- |
 | Original Data File | [Data Set](https://myuva-my.sharepoint.com/:x:/g/personal/jph4dg_virginia_edu/IQD5Sikj0_GYSqFhC_V6NKiIAY4uVWGm6lxdAOjQbBX53RE?e=z9Vw2g) |
@@ -18,7 +17,6 @@ Need to fix the last 4 links
 | Pipeline & Model File | [pipeline.ipynb](scripts/pipeline.md) |
 | Ryan Ermovick MIT License | [license](LICENSE) | 
 
-NEED TO UPDATE THIS
 #### Quick Folder Guide
 | Folder | Description |
 | :--- | :--- |
