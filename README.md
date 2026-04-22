@@ -14,7 +14,7 @@ DOI Linked [here](https://doi.org/10.5281/zenodo.19362900)
 | Original Data File | [Data Set](https://myuva-my.sharepoint.com/:x:/g/personal/jph4dg_virginia_edu/IQD5Sikj0_GYSqFhC_V6NKiIAY4uVWGm6lxdAOjQbBX53RE?e=z9Vw2g) |
 | Press Release | [press_release.md](documents/press_release.md) |
 | Data Creation File | [data_preparation](scripts/data_preparation.ipynb) |
-| Pipeline & Model File | [pipeline.ipynb](scripts/pipeline.md) |
+| Pipeline & Model File | [pipeline.ipynb](scripts/pipeline.ipynb) |
 | Ryan Ermovick MIT License | [license](LICENSE) | 
 
 #### Quick Folder Guide
@@ -32,9 +32,9 @@ DOI Linked [here](https://doi.org/10.5281/zenodo.19362900)
 
 #### Reasoning
 
-**Rationale for Refinement:** I refined the original problem to be centered around predicting the air quality of a specific location given the environmental data from that area. It is extremely important to be able to predict the air quality of a certain location so that citizens can be advised on any risks/health hazards for that day (and how to combat them, such as with masks). Also, predicting the air quality has to be done in a small enough location (such as a city) because too large of an area would have too much variation in air quality (e.g. rural vs. urban). Finally, specifing current environmental data is important because then we can aim to predict air quality in later dates, and possibly start to prevent worsening conditions.
+**Rationale for Refinement:** I refined the original problem to be centered around predicting the air quality of a specific location given the environmental data from that area. It is extremely important to be able to predict the air quality of a certain location so that citizens can be advised on any risks/health hazards for that day (and how to combat them, such as with masks). Also, predicting the air quality has to be done in a small enough location (such as a city) because too large of an area would have too much variation in air quality (e.g. rural vs. urban). Finally, specifying current environmental data is important because then we can aim to predict air quality in later dates, and possibly start to prevent worsening conditions.
 
-**Motivtaion for Project:** My motivation for this project comes from my other degree, Chemistry! I am curious how the two fields can intersect in unique ways and what insights I can bring. Air quality is a great pick to combine both DS and Chem as I will be analzing data on chemicals in the environment and how they effect/predict the air quality. Additionally, I am interested in this project because I have seen many videos and reports online of bad air quality throughout the world (such as heavy smog), so I am curious to learn more about the subject.
+**Motivtaion for Project:** My motivation for this project comes from my other degree, Chemistry! I am curious how the two fields can intersect in unique ways and what insights I can bring. Air quality is a great pick to combine both DS and Chem as I will be analyzing data on chemicals in the environment and how they effect/predict the air quality. Additionally, I am interested in this project because I have seen many videos and reports online of bad air quality throughout the world (such as heavy smog), so I am curious to learn more about the subject.
 
 FIX THIS LINK
 **How Bad is the Air You're Breathing?** Read the full Press Release [Here]()!
