@@ -62,7 +62,78 @@ This project lives in multiple domains. It exists in the domain of sustainabilit
 | 5 ways Cites are Cleaning the Air we Breathe | This article describes the tactics and increased monitoring that cities are implementing to combat air pollution. This is useful as air quality prediction models can point towards the cities that need new, greener infrastructure. | https://myuva-my.sharepoint.com/:b:/g/personal/jph4dg_virginia_edu/IQBGaMJVswUiS7Ka2GuHSI38AeM7VxosM0a-8KZ-0Rttsc8?e=9dyyTZ |
 
 ## Data Creation
+#### Provenance
+The data used in this project is about air pollution and air quality ratings. The main dataset was found from Kaggle, and upon further inspectation this dataset originates from multiple sources, including the World Health Organization and the World Bank. This data was webscraped to form the Kaggle dataset. For this project, the kaggle dataset was converted to the document model using MongoDB.
+
+#### Bias and Mitigation
+In this case, bias was not introduced in my creation of the dataset as I am just pulling dataset from offline. However, there are multiple spots where bias could have been introduced in its earlier stages. This dataset is a combination of data from the World Health Organization and the World Bank. Bias could have come from this data being repurposed for a use different than its original intent. Bias could have also been introduced when this data was collected in the first place. For example, perhaps there was a political or external pressure that influenced the data collector to misrepresent data or only collect atmospheric data at certain times (so as to downplay or exaggerate the spread of air pollution). Another source of bias could come from the fact that this dataset is not very large, so any predictions made off of it could be skewed. Additionally, machine inaccuracies could lead to biased data. These are all possible sources of bias in the data's provenance that could influence its current state. 
+
+First, some of the possible biases listed above likely did not happen. The WHO has strict data principles that ensure that there data is accurate and accesible to all. As for other possible sources of bias, such as a small dataset and machine inaccuracy, a solution to this could be bootstrapping the current dataset so as to simulate multiple/larger datasets. This could help users make more robust predictions. Also to address the possible bias of misused data, this data is all about air pollution and air quality. This is a theme through the datasets lifetime and its different stages, so the risk of the data being misused is relatively low. 
+
+#### Key Decisions
+In this project there were not many massive judgement calls. Perhaps the biggest judgement call is determining how this dataset should be used. A common metric for air quality is the air quality index. This is a calculated value, and hence is not useful for machine learning predictions. However, a value that could be useful in machine learning prediction is what class of air quality each region is. Since this is a classification column based on the data, it can be predicted accurately. This was an important decision because I had to choose how I wanted to make my dataset so that it can be used for this purpose. I decided that this classification model was sufficient and be especially good for user interpretation. 
+
+#### Data Files
+| Code File | Description | Link |
+| :--- | :--- | :--- |
+| Data Creation | File that shows the data creation | [Data Preparation](scripts/data_preparation.ipynb) |
 
 ## Metadata
+#### Implicit Schema
+Below is the implicit schema for what a document in the Population collection *could* look like, however, if any of the keys are missing, then the document is still valid
 
+
+{
+  
+  _id: STRING,
+
+  Temperature: FLOAT,
+
+  Humidity: FLOAT,
+
+  PM2.5: FLOAT,
+
+  PM10: FLOAT,
+
+  NO2: FLOAT,
+
+  SO2: FLOAT,
+
+  CO: FLOAT,
+
+  Proximity_to_Industrial_Areas: FLOAT,
+
+  Population_Density: INT,
+
+  Air Quality: STRING
+
+}
+
+#### Summary of Data Tables
+| Data Table | Description | Link (Connection String) |
+| :--- | :--- | :--- |  
+| Pollution | Data on pollutants in the air and the air quality rating | mongodb+srv://rveermo_db_user:327cBSJ8jWAyOu1s@pollution.q8lipjf.mongodb.net/?appName=pollution |
+
+#### Data Dictionary 
+**Pollution**
+| Name | Datatype | Description | Example | Uncertainty |
+| :--- | :--- | :--- | :--- | :--- |  
+| _id | STRING | The unique Id for each document | 69e4e1322c1f48546c50b31f | N/A |
+| Temperature | FLOAT | Average temperature of the region in Celsius | 29.8 | 0.1 |
+| Humidity | FLOAT | Relative Humidity (%) | 59.1 | 0.1 |
+| PM2.5 | FLOAT | Fine particulate matter levels | 5.2 | 0.1 |
+| PM10 | FLOAT | Coarse particulate matter levels | 17.9 | 0.1 |
+| NO2 | FLOAT | Nitrogen dioxide level | 18.9 | 0.1 |
+| SO2 | FLOAT | Sulfur Dioxide level | 9.2 | 0.1 |
+| CO | FLOAT | Carbon Monoxide level | 1.72 | 0.1 |
+| Proximity_to_Industrial_Areas | FLOAT | Distance to nearest industrial zone | 6.3 | 0.1 |
+| Population_Density | INT | Number of people per square kilomter | 311 | 1 |
+| Air Quality | STRING | Air Quality Rating | Hazardous | N/A |
+
+#### Quantification of Uncertainty
+There are many measured numerical values in this dataset. These columns include: Temperature, Humidity, PM2.5, PM10, NO2, SO2, CO, Proximity_to_Industrial_Areas, and Population_Density. Each of these values contain some uncertainty as they are measured values. 
+
+The numerical uncertainy for all of the float columns is 0.01 due to machine error or human error in reading the values. 
+
+Population_density is a calculated value and has an uncertainy of 1 due to possible mismeasurements in human counting or square kilometer range. 
 
