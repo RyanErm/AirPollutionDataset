@@ -6,7 +6,7 @@ Ryan Ermovick - jph4dg
 NEED TO CHANGE THE LINK
 DOI Linked [here](https://doi.org/10.5281/zenodo.19362900)
 
-**Executive Summary:** 
+**Executive Summary** 
 
 
 This repository contains the detailed creation of the AirPollutionDataset, including the origin of the data, how it was transformed, and how it can be used. The README contains information on the problem being solved, domain exposition, data creation, and metadata. The repository also contains a RandomForestClassifier that is used to predict the air quality ranking of new locations. The press release details how this model can be used and why it is important. When utilizing the AirPollutionDataset, please refer to the License in this repository. 
@@ -119,8 +119,8 @@ Below is the implicit schema for what a document in the Population collection *c
 | :--- | :--- | :--- |  
 | Pollution | Data on pollutants in the air and the air quality rating | In the MongoDB project "airquality" in the collection "pollution". |
 
-#### Data Dictionary 
-Pollution
+#### Data Dictionary for the Pollution Data table
+
 | Name | Datatype | Description | Example | Uncertainty |
 | :--- | :--- | :--- | :--- | :--- |  
 | _id | STRING | The unique Id for each document | 69e4e1322c1f48546c50b31f | N/A |
