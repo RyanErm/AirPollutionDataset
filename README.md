@@ -17,9 +17,9 @@ This repository contains the detailed creation of the AirPollutionDataset, inclu
 | Original Data File | [Data Set](https://myuva-my.sharepoint.com/:x:/g/personal/jph4dg_virginia_edu/IQD5Sikj0_GYSqFhC_V6NKiIAY4uVWGm6lxdAOjQbBX53RE?e=z9Vw2g) |
 | Press Release | [Press_release](documents/press_release.md) |
 | Data Creation File | [Data_preparation](scripts/data_preparation.ipynb) |
-| Data Creation Markdown | [Data_preparation](scripts/data_preparation.md) |
+| Data Creation Markdown | [Data_preparation.md](scripts/data_preparation.md) |
 | Pipeline & Model File | [Pipeline](scripts/pipeline.ipynb) |
-| Pipeline & Model Markdown | [Pipeline](scripts/pipeline.md) |
+| Pipeline & Model Markdown | [Pipeline.md](scripts/pipeline.md) |
 | Ryan Ermovick MIT License | [License](LICENSE) | 
 
 #### Quick Folder Guide
