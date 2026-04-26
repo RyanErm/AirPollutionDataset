@@ -1,9 +1,7 @@
 # DS 4320 Project 2 - AirPollutionDataset
 Ryan Ermovick - jph4dg
 
-**DOI:** 19794970
-
-DOI Linked [here](https://doi.org/10.5281/zenodo.19794970)
+**DOI:** [19794970](https://doi.org/10.5281/zenodo.19796991)
 
 **Executive Summary** 
 
